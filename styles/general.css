@@ -1,0 +1,19 @@
+
+a {
+  text-decoration: none;
+}
+
+.primary-bg {
+  background-color: #400CA2;
+  border: 1 px solid #400CA2;
+}
+
+.primary-t {
+  color: #400CA2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+.logo {
+  font-family: 'Oleo Script Swash Caps', cursive;
+}

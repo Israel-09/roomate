@@ -1,0 +1,29 @@
+
+.space {
+  height: 100vh;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px){
+  .space {
+    display: none;
+  }
+  .login {
+    align-items: self-start;
+  }
+}
+
+.logo {
+  padding: 10vh 0 5vh 0;
+}
+
+
+a {
+  text-decoration: none;
+}
