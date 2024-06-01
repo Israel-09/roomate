@@ -1,0 +1,28 @@
+body {
+    padding-top: 10vh;
+    background-color: #d7cceb;
+}
+
+.container {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e2dcee;
+    border: 1px solid #400CA2;
+    border-radius: 5px;
+}
+
+#passwordStrength {
+    width: 0%;
+    height: 3px;
+}
+
+.progress{
+    height: fit-content;
+}

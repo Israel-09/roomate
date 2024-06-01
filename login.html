@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign In</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
@@ -28,7 +28,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <form action="#" method="POST">
+                                        <h4 class="text-center">Login</h4>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <form action="http://localhost:5000/sessions" method="POST">
                                             <div class="mb-3">
                                                 <label for="email" class="form-label">Email address</label>
                                                 <input type="email" class="form-control" id="email" name="email" required>
@@ -40,11 +44,12 @@
                                             </div>
                                             <button type="submit" class="btn btn-primary primary-bg">Login</button>
                                         </form>
+                                        <p id="errorMessage" style="color: red;" class="text-centre"></p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <p class="text-center">Don't have an account? <a href="register.php">Register</a></p>
+                                        <p class="text-center">Don't have an account? <a href="register.html">Register</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -53,5 +58,6 @@
             </div>
          </div>
     </div>
+    <script src="scripts/login.js"></script>
 </body>
 </html>
