@@ -4,24 +4,31 @@ document.querySelector('form').addEventListener('submit', function(event) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    fetch('http://localhost:5000/sessions', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({email, password})
-    })
-    .then(response => {
-        if (!response.ok) {
-            return response.text().then(err => { throw new Error(err); });
+    const apiUrl = 'http://127.0.0.1:5000';
+
+    async function login() {
+        try {
+            const response = await fetch(`${apiUrl}/sessions`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password }),
+                credentials: 'include'
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                window.location.href = '/app.html';
+            } else {
+                alert(result.message);
+            }
+        } catch (error) {
+            console.error('Error during login:', error);
+            alert('An error occurred. Please try again.');
         }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch(error => {
-        document.getElementById('errorMessage').textContent = 'Password or email incorrect';
-        console.log('Error: ', error);
-    });
+    }
+
+    login();
+    
 });

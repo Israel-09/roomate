@@ -1,6 +1,7 @@
 
-.space {
+.login-bg {
   height: 100vh;
+  background-image: url('../src/login-bg.png');
 }
 
 .login {
@@ -11,7 +12,7 @@
 }
 
 @media screen and (max-width: 600px){
-  .space {
+  .login-bg {
     display: none;
   }
   .login {
@@ -22,7 +23,6 @@
 .logo {
   padding: 10vh 0 5vh 0;
 }
-
 
 a {
   text-decoration: none;

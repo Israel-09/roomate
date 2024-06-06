@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header {
+    background-color: #93BCBB;
+    min-height: 100px;
+    max-height: 200px;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header h2 {
+    color: #e0eeed;
+    font-size: 32px;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+.header-right{
+    margin: 0;
+    min-width: 50px;
+    max-width: 70px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-md-9 {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.profile-icon {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: calc(6%);
+    right: 10px;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}

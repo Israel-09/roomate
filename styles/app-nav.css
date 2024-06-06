@@ -1,0 +1,54 @@
+.nav-bar {
+    height: 100vh;
+    max-width: 500px;
+    background-color: #e0eede;
+    padding: 0 5px 0 5px;
+    position: fixed;
+
+}
+
+.col-md-9 {
+    position: absolute;
+    right: 0;
+}
+
+.nav-bar .section {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.nav-bar .selected {
+    background-color: #400ca2;
+    a, i {
+        color: #ffffff;
+    }
+}
+
+.section a {
+    color: #0f0d0d;
+}
+
+.section h4 {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.icons {
+    font-size: 1rem;
+    padding-right: 20px;
+    color: #0f0d0d;
+}
+
+.bar:active {
+    .nav-bar {
+        display: None;
+    }
+}
+
+@media  screen and (max-width: 767px) {
+    .nav-bar {
+        display: None;
+    }
+}

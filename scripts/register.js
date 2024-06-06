@@ -51,6 +51,8 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     })
     .then(data => {
         // Handle success response
+        alert('Account successfully created.')
+        window.location.href = '/login.html';
         console.log(data);
     })
     .catch(error => {
